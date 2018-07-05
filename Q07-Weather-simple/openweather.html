@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <title>Weather</title>
+
+  </head>
+  <body>
+    <form class="form-inline" action="#" onsubmit="getMeteo()">
+      <div class="form-group">
+        <label for="town">Insert town name :</label>
+        <input type="search" class="form-control" id="townname">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+    <p id="citytemp"> </p>
+
+    <script type="text/javascript">
+
+    function getMeteo() {
+      var city = document.getElementById("townname").value
+      var citytemp = document.getElementById("citytemp")
+
+      if (city !== null && city !== undefined && city.length > 0) {
+        var request = new XMLHttpRequest()
+        request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=b7ff8aa4f34209d7d731cd853ad93cd8&units=metric', false)
+        request.send()
+
+        if (request.status === 200) {
+          var json = request.responseText
+          var res = JSON.parse(json)
+          var temp = res.main.temp
+          console.log(temp)
+          citytemp.innerHTML = 'A ' + city + ', il fait ' + temp + '°C.'
+        } else if (request.status === 404) {
+          citytemp.innerHTML = "Merci de renseigner une ville correcte."
+        } else {
+          console.log("Status de la réponse: %d (%s)", request.status, request.statusText);
+        }
+      } else {
+        citytemp.innerHTML = "renseigner votre ville."
+      }
+    }
+
+    </script>
+
+  </body>
+</html>

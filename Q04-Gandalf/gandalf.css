@@ -1,0 +1,43 @@
+/* Gandalf CSS by Jonatha Domingues */
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-gandalf {
+    background-image: url("gandalf.png");
+    background-repeat: no-repeat;
+    opacity: 1;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+.reward-line {
+    position: absolute;
+    top: 100px;
+    opacity: 1;
+    border-radius: 5px;
+    width: inherit;
+    font-size: 3em;
+    margin: auto;
+    text-align: center;
+    background-color: yellow;
+    padding: 10px;
+    z-index: 9999;
+}
+
+.price {
+    color: orange;
+}
+
+.reward-golden {
+    display: block;
+}
+
+.reward {
+    opacity: 1;
+}

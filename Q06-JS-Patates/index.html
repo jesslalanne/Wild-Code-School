@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quête JS patates</title>
+</head>
+<body>
+	<script>
+		let  answer = prompt("Hey mon ami ! Tu aimes ça les patates ?");
+		if (answer.toUpperCase() === "OUI") {
+			for (var i = 0; i <= 7; i++) {
+				console.log("#".repeat(i));
+			}
+		}
+		else if (answer.toUpperCase() === "NON") {
+			alert("Oh quel dommage ! C'est tellement bon pourtant");
+		}
+		else {
+			alert("Je vous sens comme tiraillé");
+		}
+	</script>
+</body>
+</html>

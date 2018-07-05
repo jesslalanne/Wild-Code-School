@@ -1,0 +1,52 @@
+body {
+  width: 800px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  color: #E64A19;
+}
+
+.container, h1 {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+fieldset {
+  display: block;
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.ghost-input {
+  display: block;
+  font-weight:300;
+  width: 100%;
+  font-size: 25px;
+  border:0px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  color: #4b545f;
+  background: lightgray;
+  font-family: Open Sans,Verdana;
+  padding: 10px 15px;
+  margin: 30px 0px;
+  transition: all 0.1s ease-in-out;
+}
+.ghost-input:focus {
+  border-bottom:1px solid #ddd;
+}
+.ghost-button {
+  background-color: transparent;
+  border:2px solid #ddd;
+  padding:10px 30px;
+  width: 100%;
+  min-width: 350px;
+  transition: all 0.1s ease-in-out;
+}
+.ghost-button:hover {
+  border:2px solid #515151;
+}

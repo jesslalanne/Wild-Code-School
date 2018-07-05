@@ -1,0 +1,536 @@
+@font-face{
+    font-family:'textb';
+    src:url("../font/anirb___.ttf");
+    font-weight:bold;
+}
+
+@font-face{
+    font-family:'textn';
+    src:url("../font/anirm___.ttf");
+    font-weight:normal;
+}
+
+@font-face{
+    font-family:'titlen';
+    src:url("../font/partybusiness.ttf");
+    font-weight:normal;
+}
+
+
+@font-face{
+    font-family:'symbol';
+    src:url("../font/tngan.ttf");
+    font-weight:normal;
+}
+
+body,h2,a{
+    font-family:textn;
+}
+
+h1{
+    font-family: titlen;
+    font-size:4vw;
+}
+
+h2{
+    font-size:1.8vw;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h3{
+    color:white;
+    font-size: 1.2em;
+}
+
+h2:after,h2:before{
+    content:" Ij ";
+    font-family:symbol;
+    color:orangered;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*navbar*/
+
+.navbar-default {
+    background-color:#282828;
+    border-radius: 0;
+    margin:0;
+    border: 0;
+    padding-bottom: 4px;
+}
+
+.navbar-default .navbar-nav > li > a,.navbar-default .navbar-nav > li > a:hover {
+    color: white;
+    border-bottom: 3px #282828 solid;
+}
+
+.navbar-default .navbar-nav > li > a.active {
+    color: white;
+    border-bottom: 3px white solid;
+}
+
+/*carroussel*/
+
+.carroussel-container {
+    margin:0;
+    padding: 0;
+}
+
+.carousel-caption {
+    padding-bottom: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.carousel-caption p.title {
+    font-size: 4vw;
+    font-family: titlen;
+    opacity: .75;
+}
+
+/*pills*/
+
+.container-pills {
+    padding: 5px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-pills a {
+    background-color: unset;
+    color:gray;
+}
+
+.glyphe{
+    content:" Ij ";
+    font-family:symbol;
+    color:orangered;
+    vertical-align: top;
+    font-size: 1.5em;
+}
+
+.nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus{
+    background-color: unset;
+    color:orangered;
+    border-bottom: 3px orangered solid;
+}
+
+/*thumbnails*/
+
+#mostdangerous {
+    padding-bottom: 20px;
+}
+
+.orange {
+    color: orange;
+}
+
+.caption {
+    text-align : center;
+}
+
+.profil {
+    position: relative;
+    background-color: black;
+    z-index: 1;
+    opacity: 0.9;
+    padding-top:10px;
+    margin: 0 20px;
+}
+
+.profil:hover {
+    opacity: 1;
+}
+
+.gold-profil {
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    left: 10%;
+    width: 80%;
+    padding: 0 15px; 
+    border-radius: 7.5px;
+    text-align: center;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.dead {
+    position: absolute;
+    top: 80px;
+    left: 10%;
+    width: 80%;
+    padding: 0 15px; 
+    border-radius: 15px;
+    text-align: center;
+    z-index: 2;
+    font-size: 4em;
+    color:orangered;
+}
+
+.shadow {
+    opacity:.1;
+}
+
+.name-dead {
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.name-dead span {
+    color: white;
+    font-family: tahoma;
+    font-size: 3em;
+    text-decoration: line-through;
+    text-decoration-color: orangered;
+}
+
+.gold-profil p {
+    color: black;
+    font-family: tahoma;
+    font-size: 1.8em;
+}
+
+.profil:hover .gold-profil {
+    opacity: 0;
+}
+
+.name-profil {
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    right: 1px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.name-profil span{
+    color: white;
+    font-family: tahoma;
+    font-size: 3em;
+}
+
+.profil:hover .name-profil {
+   top:70%;
+   text-align: center;
+}
+
+.profil:hover .name-profil span {
+   font-size: 2em;
+}
+
+/*REWARD*/
+
+.clear {
+    padding-top: 20px;
+}
+
+.clear2 {
+    padding-bottom: 20px;
+}
+
+.coin-img {
+    padding-top: 40px;
+}
+
+#reward {
+    background-image: url("../img/_bg_dark.png");
+    min-height: 300px;
+    padding:15px;
+}
+
+#reward h2,#reward p{
+    color:white;
+}
+
+#reward h2 {
+    font-size:2vw;
+}
+
+#reward p{
+    font-size:1.25vw;
+    padding: 30px;
+    line-height: 27.5pt;
+}
+
+#reward img{
+    width:90%;
+    height:90%;
+}
+
+
+.reward-button {
+    text-align : center;
+    padding-bottom : 30px;
+}
+
+.button {
+    border: 1px solid #484848;
+    padding: 10px 15px;
+    border-radius: 7.5px;
+    opacity: .4;
+    color: #484848;
+    font-size: 20px;
+}
+
+.button:hover {
+    text-decoration: none;
+    opacity: .9;
+    border: 1px solid #FF4500;
+    transition: .35s;
+    color: #fff;
+}
+
+
+
+/*--------------------HUNTER------------------------------*/
+#hunters {
+    background-image: url("../img/_bg_light.png");
+    padding: 0 25px;
+}
+.hunter-profil {
+    display: flex;
+    flex-direction: column;
+    padding: 5px
+}
+
+.hunter {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+#hunters h2 {
+    font-size: 2vw;
+}
+
+.hunter-img {
+    margin: 5px;
+}
+
+.like{
+    padding-top: 20px;
+}
+
+.hunter-profil div p {
+    color:orangered;
+    font-size:1.4em;
+}
+
+.hunter-profil div a {
+    color:dimgray;
+    font-size:0.8em;
+}
+
+/*----------------------------RING-------------------------------*/
+
+#ring {
+
+    background-image: url("../img/_bg_dark.png");
+}
+
+#ring h2 {
+    color:white;
+    font-size:2vw;
+}
+
+#ring p {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+}
+
+.panel-default {
+    border: 0px;
+}
+
+.panel-default>.panel-heading {
+    background-color: #282828;
+    border-bottom: 3px solid orangered;
+}
+
+.panel-default>.panel-heading>h3{
+    color:white;
+}
+
+#ring img {
+    max-height: 220px;
+    margin:15px;
+}
+
+.gollum-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gollum {
+    display:flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.gollum p {
+    margin: 10px;
+}
+
+.gollum .signature {
+    text-align:right;
+}
+
+.gollum span {
+    color: darkgray;
+}
+
+/*----------------------------JOIN ARMY--------------*/
+
+#joinarmy {
+    padding-bottom: 15px;
+    text-align: center;
+
+}
+
+#joinarmy img {
+    max-width : 100%;
+}
+
+.banner {
+    max-width : 95%;
+    padding: 20px 20px 50px 20px;
+    text-align: center;
+}
+
+#joinarmy p {
+    width: 90%;
+    text-align: center;
+}
+
+.pastille {
+    padding-top: 50px;
+}
+
+.moreinfo {
+    padding: 60px;
+}
+
+.moreinfo div{
+    display: flex;
+    justify-content: center;
+}
+
+.moreinfo p {
+    color:orangered; 
+    text-align: center;
+    font-size: 2.25em;
+    padding-bottom: 30px;
+}
+
+.button2 {
+    border: 2px solid #151516;
+    padding: 10px 15px;
+    border-radius: 7.5px;
+    opacity: .4;
+    color: #151516;
+    font-size: 20px;
+}
+
+.button2:hover {
+    text-decoration: none;
+    opacity: .9;
+    border: 2px solid #FF4500;
+    transition: .35s;
+    color: #333;
+}
+
+.center-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*---------------------CONTACT----------------*/
+#contact {
+    background-image: url("../img/_bg_dark.png");
+    padding: 0 30px;
+}
+
+#contact h2 {
+    color:white;
+    font-size:2vw;
+    padding-bottom: 30px;
+}
+
+#contact textarea{
+    height: 300px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container img {
+    width: 100%;
+    max-width:500px;
+}
+
+.form-control {
+    height: 50px;
+    opacity: .95;
+    font-size: 20px;
+    border: 2px solid #333;
+    border-radius: 7.5px;
+}
+
+.form-control:hover {
+    border: 2px solid orangered; 
+}
+
+
+/*-------------FOOTER-------------------*/
+
+
+footer {
+    background-color: #282828;
+    border-top: 3px solid orangered; 
+}
+
+footer a {
+    vertical-align: 10px;
+    color:white;
+    font-size: .75em;
+
+}
+
+footer ul{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: orangered;
+}
+
+.container-footer-logo {
+    display: flex;
+    justify-content: center;
+}

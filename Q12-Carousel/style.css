@@ -1,0 +1,39 @@
+* {
+    margin: 15px;
+    padding: 0;
+}
+
+#carousel {
+    display: flex;
+    align-items: center;
+}
+
+.prev, .next {
+    position:absolute;
+    cursor: pointer;
+    width: 60px;
+    height: 20px;
+    border: 1px solid red;
+    top: calc(60% - 5px);
+    background-size: cover;
+    text-align: center;
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 215px;
+}
+
+
+#carousel ul li{
+    position:absolute;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    list-style: none;
+    background-position: top, center;
+}
