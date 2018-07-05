@@ -14,42 +14,42 @@ function promptMessage(playerName) {
     }
 }
 
-let boatOne = {'b4':0, 'b5':0, 'b6':0, 'total':0};
-let boatTwo = {'d9':0, 'e9':0, 'f9':0, 'total':0};
+const BOAT_ONE = {'b4':0, 'b5':0, 'b6':0, 'total':0};
+const BOAT_TWO = {'d9':0, 'e9':0, 'f9':0, 'total':0};
 
-let lieu = $("#canon");
+const LIEU = $("#canon");
 
 
-lieu.keyup((k) => {
+LIEU.keyup((k) => {
     if (k.key === 'Enter') {
-        lieuValue = lieu.val().toLowerCase();
+        LIEUValue = LIEU.val().toLowerCase();
 
-        $("#" + lieuValue).css({
+        $("#" + LIEUValue).css({
             'background-color': 'red'
     	});
 
 	    touche = false;
 	    coule = false;
 
-	    if(boatOne[lieuValue] === 0) {
-	        boatOne[lieuValue] = 1;
-	        boatOne['total']++;
+	    if(BOAT_ONE[LIEUValue] === 0) {
+	        BOAT_ONE[LIEUValue] = 1;
+	        BOAT_ONE['total']++;
 	        touche = true;
-	        if(boatOne['total'] === 3) {
+	        if(BOAT_ONE['total'] === 3) {
 	            coule = true;
 	        }
 	    }
 
-	    if(boatTwo[lieuValue] === 0) {
-	        boatTwo[lieuValue] = 1;
-	        boatTwo['total']++;
+	    if(BOAT_TWO[LIEUValue] === 0) {
+	        BOAT_TWO[LIEUValue] = 1;
+	        BOAT_TWO['total']++;
 	        touche = true;
-	        if(boatTwo['total'] === 3) {
+	        if(BOAT_TWO['total'] === 3) {
 	            coule = true;
 	        }
 	    }
 
-	    if (boatOne['total'] === 3 && boatTwo['total'] === 3) {
+	    if (BOAT_ONE['total'] === 3 && BOAT_TWO['total'] === 3) {
 	        $("#history").append('<br />WIN');
 	        $("#no-mans-land").css({'background-color':'white', 'background-image':'url("https://casimg.com/w/articles-attachments/1/599/ee735b0783.png")'});
 	    } else if (coule) {

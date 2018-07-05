@@ -1,0 +1,17 @@
+{
+  "name": "jeuplusoumoins",
+  "version": "1.0.0",
+  "description": "jeu du plus ou moins - WCS",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "us",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
