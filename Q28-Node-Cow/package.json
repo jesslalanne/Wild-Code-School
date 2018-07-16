@@ -1,0 +1,14 @@
+{
+  "name": "q28-node-cow",
+  "version": "1.0.0",
+  "description": "MOdule Node Cow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JL",
+  "license": "ISC",
+  "dependencies": {
+    "cowsay": "^1.3.1"
+  }
+}
